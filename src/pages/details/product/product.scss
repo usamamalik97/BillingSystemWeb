@@ -1,0 +1,72 @@
+@import "../../../CSS/variables.scss";
+.product {
+    padding-left: 20px;
+    padding-top: 10px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-auto-rows: minmax(100px, auto);
+    .box{
+        padding: 20px;
+        border-radius: 10px;
+        color: black;
+    }
+    .box1 {
+        grid-column: span;
+        grid-row: span 4;
+        grid-column: span 2;
+        justify-content: space-between;
+
+        .size, .brand {
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+            padding: 0px;
+
+        }
+        .material {
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+            padding: 0px;
+
+        }
+        .quantity {
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+            padding: 0px;
+        }
+        .weight {
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+            padding: 0px;
+        }
+    }
+    .box2 {
+        background-color: antiquewhite;
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+    .box3 {
+        background-color: azure;
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+    .box4 {
+        grid-column: span;
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+    .box5 {
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+    .box6 {
+        grid-column: span;
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+    
+}

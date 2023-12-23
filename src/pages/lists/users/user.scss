@@ -1,0 +1,25 @@
+.users{
+    margin: 0px;
+    padding: 0px;
+    border-radius: 100%;
+    h5{
+        margin-bottom: 20px;
+        color: darkslategrey;
+    }
+    .list {
+        .user{
+            .tableItem {
+                background-color: cadetblue;
+
+                .rowItem {
+                    font-size: small;
+                }
+            }
+            .tableHeading {
+                font-size: medium;
+
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,75 @@
+@import "../../../CSS/variables.scss";
+.bills {
+    padding-left: 20px;
+    padding-top: 10px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(7, 1fr) ;
+    grid-auto-rows: minmax(100px, auto);
+    .box{
+        padding: 20px;
+        border-radius: 10px;
+        color: black;
+    }
+    .emptyBox{
+        padding: 20px;
+        border-radius: 10px;
+        color: black;
+    }
+    .box1 {
+        grid-column: span;
+        grid-column: span 5;
+        justify-content: space-between;
+
+        .boxTitle{
+            display: flex;
+            flex-direction: row;
+            justify-self: center;
+            justify-items: center;
+            justify-content: center;
+            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .popupComponent {
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+        }
+        .billData {
+            display: flex;
+            flex-direction: column;
+
+            .material {
+                display: flex;
+                flex-direction: row;
+                justify-content: right;
+            }
+            .customerName, .invoice {
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+            }
+            .billContent {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+        .billTotal {
+            display: flex;
+            flex-direction: column;
+            .totalAmount, .paymentAmount, .remainingAmount{
+                display: flex;
+                flex-direction: row;
+                justify-content: right;
+                //justify-content: space-between;
+                padding: 2px;
+                margin: 2px;
+            }
+        }
+        
+    }
+    
+}

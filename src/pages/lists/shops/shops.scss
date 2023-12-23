@@ -1,0 +1,37 @@
+.shops{
+    margin: 0px;
+    padding: 0px;
+    border-radius: 100%;
+    h5{
+        margin-bottom: 20px;
+        color: darkslategrey;
+    }
+    .list {
+        .listItem{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom: 3px;
+            .customer{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .customerName{
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 0px;
+                    padding: 0px;
+
+                    .tag {
+                        justify-content: right;
+                        font-size: 14px;
+                    }
+                }
+                .shopName{
+                    font-size: 12px;
+                    justify-content: left;
+                }
+            }
+        }
+    }
+}

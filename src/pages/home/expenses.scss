@@ -1,0 +1,42 @@
+.expensesClass{
+    margin: 0px;
+    padding: 0px;
+    border-radius: 100%;
+    h5{
+        margin-bottom: 20px;
+        color: antiquewhite;
+    }
+    .list {
+        .listItem{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom: 3px;
+            .bill{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .customerName{
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 0px;
+                    padding: 0px;
+
+                    .amount {
+                        justify-content: right;
+                        font-size: 14px;
+                    }
+                }
+                .shopName{
+                    font-size: 12px;
+                    justify-content: left;
+                }
+            }
+            .invoice{
+                font-size: 12px;
+                justify-content: left;
+                color: cadetblue;
+            }
+        }
+    }
+}

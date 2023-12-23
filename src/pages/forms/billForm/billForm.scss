@@ -1,0 +1,69 @@
+@import "../../../CSS/variables.scss";
+
+.billForm {
+    padding-left: 20px;
+    padding-top: 10px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    .title {
+        justify-self: center;
+        margin-top: 0px;
+    }
+    .box{
+        padding: 20px;
+        color: black;
+        overflow: auto; /* Add scrollbar if content overflows */
+
+        .billAttributes{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .billPaymentInfo{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+            }
+        }
+        .table {
+            width: 100%; /* Make the table fill the entire width of the box */
+            border-collapse: collapse; /* Collapse table borders */
+
+            .table-group-divider {
+                .custom-cell {
+                    height: 20px;
+                    width: 30px;
+                }
+            }
+            .custom-cell {
+                height: 20px;
+                width: 50px;
+            }
+        }
+          
+          .table th,
+          .table td {
+            width: 40px;
+            border: 1px solid #ccc; /* Add cell borders or other styles as needed */
+            padding: 8px; /* Add padding to cells */
+          }
+    }
+    .box1 {
+        grid-column: span;
+        grid-column: span 3;
+    }
+    .box2 {
+        padding: 20px;
+        border-radius: 0px;
+        grid-column: span;
+    }
+    .box3 {
+        padding: 20px;
+        border-radius: 0px;
+        grid-column: span;
+    }
+    
+}
